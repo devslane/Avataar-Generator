@@ -4,10 +4,10 @@ import 'methods/face.dart';
 import 'methods/tops.dart';
 
 void main() {
-  print(getSvg());
+  print(getSvg(new Options()));
 }
 
-String getSvg() {
+String getSvg(Options options) {
   return """
   <svg
         width="264px"
@@ -72,7 +72,7 @@ String getSvg() {
                     <use xlink:href="#path-5" />
                   </mask>
                   <use fill="#D0C6AC" xlink:href="#path-5" />""" +
-      skinSvg() +
+      skinSvg(options.skin, "mask-6") +
       """
                   <path
                     d="M156,79 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 L44,79 L44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,79 Z"
@@ -83,8 +83,8 @@ String getSvg() {
                   />
                 </g>
                 """ +
-      getClothSvg() +
-      faceSvg() +
+      getClothSvg(options.clothes) +
+      faceSvg(options.mouth, options.eyes, options.eyebrow) +
       topSVG(Top.nohair) +
       """
               </g>
