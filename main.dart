@@ -94,28 +94,36 @@ String getSvg() {
       </svg>""";
 }
 
-String skinSvg() {
-  return """
-  <g
-          id="Skin/👶🏽-03-Brown"
-          mask="url(#mask-6)"
-          fill="#FFDBB4">
-          <g transform="translate(-32.000000, 0.000000)" id="Color">
-            <rect x="0" y="0" width="264" height="244" />
-          </g>
-        </g>""";
+String skinSvg(Skin skin, String maskId) {
+  switch (skin) {
+    case Skin.tanned:
+      return makeColor("#FD9841", maskId);
+    case Skin.yellow:
+      return makeColor("#F8D25C", maskId);
+    case Skin.pale:
+      return makeColor("#FFDBB4", maskId);
+    case Skin.light:
+      return makeColor("#EDB98A", maskId);
+    case Skin.brown:
+      return makeColor("#D08B5B", maskId);
+    case Skin.darkBrown:
+      return makeColor("#AE5D29", maskId);
+    case Skin.black:
+      return makeColor("#614335", maskId);
+    default:
+      return "";
+  }
 }
 
-String faceSvg() {
+String faceSvg(Mouth mouth, Eyes eyes, Eyebrow eyeBrow) {
   return """<g id="Face" transform="translate(76.000000, 82.000000)" fill="#000000">""" +
-      mouthSvg() +
+      mouthSvg(mouth) +
       noseSvg() +
-      eyesSvg() +
-      eyebrowSvg() +
+      eyesSvg(eyes) +
+      eyebrowSvg(eyeBrow) +
       """</g>
       """;
 }
-
 
 class Options {
   AvatarStyle style;
@@ -124,6 +132,7 @@ class Options {
   HairColor hairColor;
   FacialHair facialHair;
   Cloth clothes;
+  ClothColor clothColor;
   Eyes eyes;
   Eyebrow eyebrow;
   Mouth mouth;
@@ -136,9 +145,21 @@ class Options {
     hairColor = HairColor.aurburn;
     facialHair = FacialHair.beardlight;
     clothes = Cloth.blazerShirt;
+    clothColor = ClothColor.black;
     eyes = Eyes.close;
     eyebrow = Eyebrow.angry;
     mouth = Mouth.concerned;
     skin = Skin.black;
   }
+}
+
+String makeColor(String hex, String maskId) {
+  return """
+  <g
+          id='Color/Palette/Gray-01'
+          mask='url(#${maskId})'
+          fill-rule='evenodd'
+          fill=${hex}>
+          <rect id='🖍Color' x='0' y='0' width='264' height='110' />
+        </g>""";
 }
