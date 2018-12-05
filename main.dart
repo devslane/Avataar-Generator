@@ -144,8 +144,8 @@ class Options {
 
   Options() {
     style = AvatarStyle.circle;
-    top = Top.longhairstraight;
-    accessories = Accessories.blank;
+    top = Top.hijab;
+    accessories = Accessories.kurta;
     hairColor = HairColor.aurburn;
     facialHair = FacialHair.beardmagestic;
     clothes = Cloth.blazerShirt;
