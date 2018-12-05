@@ -791,7 +791,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               <mask id="curly_mask2" fill='white'>
                 <use xlink:href='#curly_path2' />
               </mask>
-              <use id='Curly!' fill='#314756' xlink:href='#curly_path2' />""" +
+              <use id='Curly!' fill='${hairColorHex(hairC)}' xlink:href='#curly_path2' />""" +
           hairColor(hairC, "curly_mask2") +
           """</g>""" +
           facialHair(fh, fhc) +
@@ -1463,7 +1463,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               <mask id="wall_mask2" fill='white'>
                 <use xlink:href='#wall_path2' />
               </mask>
-              <use id='Combined-Shape' fill='#E6E6E6' xlink:href='#wall_path2' />""" +
+              <use id='Combined-Shape' fill='${hairColorHex(hairC)}' xlink:href='#wall_path2' />""" +
           hairColor(hairC, "wall_mask2") +
           """</g>""" +
           facialHair(fh, fhc) +
@@ -1540,7 +1540,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               <mask id="long_mask2" fill='white'>
                 <use xlink:href='#long_path2' />
               </mask>
-              <use fill='#272C2E' xlink:href='#long_path2' />""" +
+              <use fill='${hairColorHex(hairC)}' xlink:href='#long_path2' />""" +
           hairColor(hairC, "long_mask2") +
           """</g>
             <path
@@ -1584,7 +1584,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               <mask id='strand_mask2' fill='white'>
                 <use xlink:href='#strand_path2' />
               </mask>
-              <use fill='#ECC797' xlink:href='#strand_path2' />""" +
+              <use fill='${hairColorHex(hairC)}' xlink:href='#strand_path2' />""" +
           hairColor(hairC, "strand_mask2") +
           """</g>
             <path
@@ -1630,7 +1630,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               </mask>
               <use
                 id='Dreads-With-Cut'
-                fill='#2E3257'
+                fill='${hairColorHex(hairC)}'
                 xlink:href='#short_path3'
               />""" +
           hairColor(hairC, "1_mask_1") +
@@ -1668,7 +1668,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               <mask id="short_mask1" fill='white'>
                 <use xlink:href='#short_path3' />
               </mask>
-              <use id='Dreads' fill='#2E3257' xlink:href='#short_path3' />""" +
+              <use id='Dreads' fill='${hairColorHex(hairC)}' xlink:href='#short_path3' />""" +
           hairColor(hairC, "short_mask1") +
           """</g>""" +
           accessorySvg(acc) +

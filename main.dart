@@ -124,7 +124,7 @@ class Options {
 
   Options() {
     style = AvatarStyle.circle;
-    top = Top.longhairbun;
+    top = Top.shorthairfrizzle;
     accessories = Accessories.kurta;
     hairColor = HairColor.brownDark;
     facialHair = FacialHair.moustachemagnum;
