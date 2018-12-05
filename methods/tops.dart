@@ -2,12 +2,8 @@ import '../enums.dart';
 import '../main.dart';
 import 'accessories.dart';
 
-String topSVG(Top top,
-    [FacialHair fh,
-    Accessories acc,
-    HatColor hColor,
-    FacialHairColor fhc,
-    HairColor hairC]) {
+String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
+    FacialHairColor fhc, HairColor hairC) {
   switch (top) {
     case Top.nohair:
       {
@@ -1369,7 +1365,7 @@ String topSVG(Top top,
       </g>""";
     case Top.longhairshavedsides:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="side_path2" x='0' y='0' width='264' height='280' />
           <path
@@ -1383,19 +1379,19 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="side_mask2" fill='white'>
-          <use xlinkHref='#side_path2' />
+          <use xlink:href='#side_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Long-Hair/Shaved-Sides' mask='url(#side_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <g
               id='Behind'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(1.000000, 0.000000)'>
               <mask id="side_mask3" fill='white'>
-                <use xlinkHref='#side_path3' />
+                <use xlink:href='#side_path3' />
               </mask>
               <g id='Mask-Hair' />
               <path
@@ -1407,18 +1403,18 @@ String topSVG(Top top,
             </g>
             <g
               id='Top'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(77.000000, 36.000000)'>
               <mask id="side_mask1" fill='white'>
-                <use xlinkHref='#side_path4' />
+                <use xlink:href='#side_path4' />
               </mask>
               <g id='Mask' />
               <path
                 d='M98.8014742,19.9396383 C107.026909,29.4843994 112,41.9114359 112,55.5 L112,65.5 L112,61.5 C112,45.7605792 105.327989,31.5794902 94.657974,21.6307409 C63.9198041,32.6768506 38.0141969,32.8027026 16.9411526,22.0082968 C6.50516181,31.936614 -1.90326939e-15,45.958626 0,61.5 L0,61.5 L0,65.5 L0,55.5 C-1.66642407e-15,41.8926148 4.98687681,29.4499771 13.2327229,19.8999944 C9.3991564,16.860899 8.25944611,8.18718262 19.4671989,4.87682391 C31.3115751,1.37843003 29.3063159,-13.2020165 47.4575903,-15.9260752 C65.6088648,-18.6501339 63.9714902,-11.3745857 81.028596,-12.3495122 C98.0857017,-13.3244386 103.635746,-29.1131795 106.849606,-25.0739991 C119.588767,-9.06341321 116.420993,9.34036319 98.8014742,19.9396383 Z'
                 id='Shadow'
-                fillOpacity='0.16'
+                fill-opacity='0.16'
                 fill='#000000'
                 mask='url(#side_mask1)'
               />
@@ -1427,7 +1423,7 @@ String topSVG(Top top,
               d='M90.8779151,52.3613196 C113.02785,65.2272934 140.816672,65.2272934 174.244382,52.3613196 C188.77455,44.5891967 199.330608,29.0424257 182.951044,8.96303524 C180.782417,6.30455678 172.244382,15.6755614 155.351199,16.6504878 C138.458015,17.6254143 142.079654,13.3498661 124.102817,16.0739248 C106.12598,18.7979835 108.111968,33.37843 96.3814191,36.8768239 C84.6508698,40.3752178 86.5778198,49.8635735 90.8779151,52.3613196 Z'
               id='Copetón'
               fill='#E0C863'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />""" +
           facialHair(fh, fhc) +
           accessorySvg(acc) +
@@ -1436,7 +1432,7 @@ String topSVG(Top top,
       </g>""";
     case Top.longhairmiawallace:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="wall_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1445,7 +1441,7 @@ String topSVG(Top top,
           />
         </defs>
         <mask id=wall_mask1 fill='white'>
-          <use xlinkHref='#wall_path1' />
+          <use xlink:href='#wall_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Long-Hair/Mia-Wallace' mask='url(#wall_mask1)'>
@@ -1453,20 +1449,20 @@ String topSVG(Top top,
             <path
               d='M69.0330562,76.212888 C81.9708809,43.1292208 95.6458945,26.5873873 110.058097,26.5873873 C110.596882,26.5873873 139.311316,26.3494141 158.112657,26.226792 C178.767149,35.5853581 193,55.3036503 193,78.114622 L193,93 L110.058097,93 L107.252975,69.820435 L103.373552,93 L69,93 L69,78.114622 C69,77.478246 69.0110772,76.844277 69.0330621,76.2128728 L69.0330562,76.212888 Z'
               id='Shadow'
-              fillOpacity='0.16'
+              fill-opacity='0.16'
               fill='#000000'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />
             <g
               id='Hair'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(40.000000, 19.000000)'>
               <mask id="wall_mask2" fill='white'>
-                <use xlinkHref='#wall_path2' />
+                <use xlink:href='#wall_path2' />
               </mask>
-              <use id='Combined-Shape' fill='#E6E6E6' xlinkHref='#wall_path2' />""" +
+              <use id='Combined-Shape' fill='#E6E6E6' xlink:href='#wall_path2' />""" +
           hairColor(hairC, "wall_mask2") +
           """</g>""" +
           facialHair(fh, fhc) +
@@ -1476,7 +1472,7 @@ String topSVG(Top top,
       </g>""";
     case Top.longhairstraight:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="long_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1485,29 +1481,29 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="long_mask1" fill='white'>
-          <use xlinkHref='#long_path1' />
+          <use xlink:href='#long_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Long-Hair/Straight' mask='url(#long_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <g
               id='Hair'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(59.000000, 18.000000)'>
               <mask id="long_mask2" fill='white'>
-                <use xlinkHref='#long_path2' />
+                <use xlink:href='#long_path2' />
               </mask>
-              <use id='Mask-Hair' fill='#944F23' xlinkHref='#long_path2' />""" +
+              <use id='Mask-Hair' fill='#944F23' xlink:href='#long_path2' />""" +
           hairColor(hairC, "long_mask2") +
           """</g>
             <path
               d='M192.506381,99.3351151 C197.3745,101.107702 202.263079,102.071957 207,102.148232 L207,102.148232 L207,92 C207,71.5654643 198.717268,53.0654643 185.325902,39.6740982 C198.717268,53.0654643 207,71.5654643 207,92 L207,215.608051 C194.525121,205.236892 178.490913,199 161,199 L157,199 L157,180.610951 L157,180.610951 C174.530782,172.282984 187.048193,155.114792 188.791419,134.867187 C194.569129,134.002364 199,129.018625 199,123 L199,110 C199,105.357474 196.363649,101.3307 192.506381,99.3351151 Z M190.18005,98.4258987 C189.794121,98.3201038 189.400422,98.233095 189,98.1659169 L189,97.9170491 C189.392974,98.0918644 189.786355,98.2614951 190.18005,98.4258987 Z M83,155.245847 C88.6015372,166.317951 97.7726252,175.277407 109,180.610951 L109,199 L105,199 C97.3271796,199 89.9346808,200.200199 83,202.423101 L83,155.245847 Z'
               id='Shadow'
-              fillOpacity='0.24'
+              fill-opacity='0.24'
               fill='#000000'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />""" +
           facialHair(fh, fhc) +
           accessorySvg(acc) +
@@ -1516,7 +1512,7 @@ String topSVG(Top top,
       </g>""";
     case Top.longhairstraight2:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="long_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1529,29 +1525,29 @@ String topSVG(Top top,
           />
         </defs>
         <mask id='long_mask1' fill='white'>
-          <use xlinkHref='#long_path1' />
+          <use xlink:href='#long_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Long-Hair/Straight' mask='url(#long_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <g
               id='Hair'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(40.000000, 15.000000)'>
               <mask id="long_mask2" fill='white'>
-                <use xlinkHref='#long_path2' />
+                <use xlink:href='#long_path2' />
               </mask>
-              <use fill='#272C2E' xlinkHref='#long_path2' />""" +
+              <use fill='#272C2E' xlink:href='#long_path2' />""" +
           hairColor(hairC, "long_mask2") +
           """</g>
             <path
               d='M67,113 C84.8226408,80.6646674 137.535357,80.6069148 154.429684,64.2083647 C165.207546,72.6982916 182.891727,79.2665518 188.963018,97.8687161 C182.891727,76.423995 165.207546,66.5601054 154.429684,56.777113 C137.535357,75.6732583 84.8226408,75.7398069 67,113 Z'
               id='Shadow'
-              fillOpacity='0.16'
+              fill-opacity='0.16'
               fill='#000000'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />""" +
           facialHair(fh, fhc) +
           accessorySvg(acc) +
@@ -1560,7 +1556,7 @@ String topSVG(Top top,
       </g>""";
     case Top.longhairstraightstrand:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="strand_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1573,29 +1569,29 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="strand_mask1" fill='white'>
-          <use xlinkHref='#strand_path1' />
+          <use xlink:href='#strand_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Long-Hair/Straight-+-Strand' mask='url(#strand_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <g
               id='Hair'
-              strokeWidth='1'
+              stroke-width='1'
               fill='none'
-              fillRule='evenodd'
+              fill-rule='evenodd'
               transform='translate(59.000000, 18.000000)'>
               <mask id='strand_mask2' fill='white'>
-                <use xlinkHref='#strand_path2' />
+                <use xlink:href='#strand_path2' />
               </mask>
-              <use fill='#ECC797' xlinkHref='#strand_path2' />""" +
+              <use fill='#ECC797' xlink:href='#strand_path2' />""" +
           hairColor(hairC, "strand_mask2") +
           """</g>
             <path
               d='M59,102.418954 L59,108.837908 C78.9453743,105.750496 99.5895621,88.3902571 111.046195,62.6582378 C111.455505,61.738913 111.849027,60.8180234 112.226862,59.8960843 C116.231662,70.5822127 123.321236,78.70828 133.495584,84.2742862 C134.956498,86.4697241 136.497401,88.5566361 138.118291,90.5350224 C125.443111,85.0120855 116.812635,76.1324394 112.226862,63.8960843 C111.849027,64.8180234 111.455505,65.738913 111.046195,66.6582378 C99.5895621,92.3902571 78.9453743,109.750496 59,112.837908 L59,102.418954 Z M207,101.140388 L207,110.280776 C192.046922,109.412723 173.901259,103.744646 156.14893,93.4953343 C145.87623,87.5643877 136.866205,80.7523483 129.502994,73.639773 C128.137922,71.1289501 126.860094,68.4997578 125.669508,65.752196 C133.646468,74.2579416 144.017178,82.4910638 156.14893,89.4953343 C173.901259,99.7446457 192.046922,105.412723 207,106.280776 L207,101.140388 Z'
               id='Shadow'
-              fillOpacity='0.16'
+              fill-opacity='0.16'
               fill='#000000'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />""" +
           facialHair(fh, fhc) +
           accessorySvg(acc) +
@@ -1604,7 +1600,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairdreads01:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="short_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1617,7 +1613,7 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="short_mask2" fill='white'>
-          <use xlinkHref='#short_path1' />
+          <use xlink:href='#short_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Dreads-01' mask='url(#short_mask2)'>
@@ -1625,16 +1621,16 @@ String topSVG(Top top,
             <FacialHair />
             <g
               id='Hair'
-              strokeWidth='1'
-              fillRule='evenodd'
+              stroke-width='1'
+              fill-rule='evenodd'
               transform='translate(1.000000, 0.000000)'>
               <mask id="1_mask_1" fill='white'>
-                <use xlinkHref='#short_path3' />
+                <use xlink:href='#short_path3' />
               </mask>
               <use
                 id='Dreads-With-Cut'
                 fill='#2E3257'
-                xlinkHref='#short_path3'
+                xlink:href='#short_path3'
               />""" +
           hairColor(hairC, "1_mask_1") +
           """</g>""" +
@@ -1644,7 +1640,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairdreads02:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="short_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1657,7 +1653,7 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="short_mask2" fill='white'>
-          <use xlinkHref='#short_path1' />
+          <use xlink:href='#short_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Dreads-02' mask='url(#short_mask2)'>
@@ -1665,13 +1661,13 @@ String topSVG(Top top,
             <FacialHair />
             <g
               id='Hair'
-              strokeWidth='1'
-              fillRule='evenodd'
+              stroke-width='1'
+              fill-rule='evenodd'
               transform='translate(36.000000, 0.000000)'>
               <mask id="short_mask1" fill='white'>
-                <use xlinkHref='#short_path3' />
+                <use xlink:href='#short_path3' />
               </mask>
-              <use id='Dreads' fill='#2E3257' xlinkHref='#short_path3' />""" +
+              <use id='Dreads' fill='#2E3257' xlink:href='#short_path3' />""" +
           hairColor(hairC, "short_mask1") +
           """</g>""" +
           accessorySvg(acc) +
@@ -1680,7 +1676,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairfrizzle:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="fizzle_path2" x='0' y='0' width='264' height='280' />
           <path
@@ -1713,28 +1709,28 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="fizzle_mask2" fill='white'>
-          <use xlinkHref='#fizzle_path2' />
+          <use xlink:href='#fizzle_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Frizzle' mask='url(#fizzle_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>""" +
           facialHair(fh, fhc) +
           """<mask id="fizzle_mask1" fill='white'>
-              <use xlinkHref='#fizzle_path1' />
+              <use xlink:href='#fizzle_path1' />
             </mask>
             <use
               id='Hair-Maks'
               stroke='none'
               fill='#252E32'
-              fillRule='evenodd'
-              xlinkHref='#fizzle_path1'/>""" +
+              fill-rule='evenodd'
+              xlink:href='#fizzle_path1'/>""" +
           hairColor(hairC, "fizzle_mask1") +
           accessorySvg(acc) +
           """</g>
         </g>
       </g>""";
     case Top.shorthairshaggymullet:
-      return """<g id='Top' strokeWidth='1' fillRule='evenodd'>
+      return """<g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="mullet_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -1747,30 +1743,30 @@ String topSVG(Top top,
           />
         </defs>
         <mask id=mullet_mask1 fill='white'>
-          <use xlinkHref='#mullet_path1' />
+          <use xlink:href='#mullet_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Shaggy-Mullet' mask='url(#mullet_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>""" +
           accessorySvg(acc) +
           """<mask id="mullet_mask2" fill='white'>
-              <use xlinkHref='#mullet_path2' />
+              <use xlink:href='#mullet_path2' />
             </mask>
             <use
               id='Hair'
               stroke='none'
               fill='#1D2633'
-              fillRule='evenodd'
-              xlinkHref='#mullet_path2'
+              fill-rule='evenodd'
+              xlink:href='#mullet_path2'
             />""" +
           hairColor(hairC, "mullet_mask2") +
           """<path
               d='M175.126419,166.897818 C175.841424,169.13759 176.874789,171.230601 178.55519,172.685954 C180.17619,174.090053 183.068114,173.745469 185.098621,173.802748 C186.770693,173.850632 188.444623,173.856087 190.114529,173.783655 C190.95366,173.747287 191.327571,174.79771 190.648775,175.281705 C190.518773,175.374442 190.388771,175.462634 190.25846,175.543856 C189.20761,176.198779 188.11838,176.802787 187.008721,177.356184 C184.485135,178.614206 181.821334,179.600077 179.02722,180.090436 C177.110792,180.426519 175.211229,180.489668 173.372596,180.266511 C173.858877,180.986862 174.419563,181.642356 175.071506,182.207788 C176.801481,183.708407 179.887821,183.340135 182.054832,183.401352 C183.839313,183.452528 185.625776,183.458358 187.407944,183.380946 C188.303488,183.342078 188.702535,184.464709 187.978106,184.981974 C187.839364,185.081086 187.700623,185.175341 187.561551,185.262145 C186.440057,185.962089 185.2776,186.607617 184.093342,187.199055 C181.400104,188.543555 178.557223,189.597195 175.57527,190.121262 C170.075488,191.087126 164.705859,189.943766 160.380755,186.413279 C159.16361,185.419765 158.027363,184.287616 157,183.053001 L157,180.610951 C163.949635,177.309539 170.111406,172.618864 175.126419,166.897818 Z M81.3150549,151.593977 C80.572738,153.13892 79.8051751,154.672522 79.0058562,156.190972 C74.2106831,165.300379 68.2421528,176.792949 56.4993303,177.596328 C55.4105393,177.670743 54.9804404,178.942941 55.8287461,179.588187 C66.9485528,188.041497 92.2609618,193.18734 101.273548,191.569729 C104.095212,191.063278 106.638877,190.402091 109,189.610443 L109,180.610951 C96.5625107,174.702544 86.6484598,164.344483 81.3150549,151.593977 Z'
               id='Shadow'
               stroke='none'
-              fillOpacity='0.16'
+              fill-opacity='0.16'
               fill='#000000'
-              fillRule='evenodd'
+              fill-rule='evenodd'
             />
             <FacialHair />
           </g>
@@ -1778,7 +1774,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairshortcurly:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="curly_path2" x='0' y='0' width='264' height='280' />
           <path
@@ -1811,21 +1807,21 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="curly_mask2" fill='white'>
-          <use xlinkHref='#curly_path2' />
+          <use xlink:href='#curly_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Curly' mask='url(#curly_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>""" +
           facialHair(fh, fhc) +
           """<mask id="curly_mask1" fill='white'>
-              <use xlinkHref='#curly_path1' />
+              <use xlink:href='#curly_path1' />
             </mask>
             <use
               id='Short-Hair'
               stroke='none'
               fill='#28354B'
-              fillRule='evenodd'
-              xlinkHref='#curly_path1'
+              fill-rule='evenodd'
+              xlink:href='#curly_path1'
             />""" +
           hairColor(hairC, "curly_mask1") +
           accessorySvg(acc) +
@@ -1834,7 +1830,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairshortflat:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="flat_path2" x='0' y='0' width='264' height='280' />
 
@@ -1868,21 +1864,21 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="flat_mask2" fill='white'>
-          <use xlinkHref='#flat_path2' />
+          <use xlink:href='#flat_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Flat' mask='url(#flat_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <FacialHair />
             <mask id="flat_mask1" fill='white'>
-              <use xlinkHref='#flat_path1' />
+              <use xlink:href='#flat_path1' />
             </mask>
             <use
               id='Short-Hair'
               stroke='none'
               fill='#1F3140'
-              fillRule='evenodd'
-              xlinkHref='#flat_path1'
+              fill-rule='evenodd'
+              xlink:href='#flat_path1'
             />""" +
           hairColor(hairC, "flat_mask1") +
           accessorySvg(acc) +
@@ -1891,7 +1887,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairshortround:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="round_path2" x='0' y='0' width='264' height='280' />
           <path
@@ -1924,21 +1920,21 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="round_mask2" fill='white'>
-          <use xlinkHref='#round_path2' />
+          <use xlink:href='#round_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Round' mask='url(#round_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <FacialHair />
             <mask id="round_mask1" fill='white'>
-              <use xlinkHref='#round_path1' />
+              <use xlink:href='#round_path1' />
             </mask>
             <use
               id='Short-Hair'
               stroke='none'
               fill='#28354B'
-              fillRule='evenodd'
-              xlinkHref='#round_mask1'
+              fill-rule='evenodd'
+              xlink:href='#round_mask1'
             />""" +
           hairColor(hairC, "round_mask1") +
           accessorySvg(acc) +
@@ -1947,7 +1943,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairshortwaved:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="waved_path2" x='0' y='0' width='264' height='280' />
           <path
@@ -1980,21 +1976,21 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="waved_mask2" fill='white'>
-          <use xlinkHref='#waved_path2' />
+          <use xlink:href='#waved_path2' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Waved' mask='url(#waved_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
             <FacialHair />
             <mask id="waved_mask1" fill='white'>
-              <use xlinkHref='#waved_path1' />
+              <use xlink:href='#waved_path1' />
             </mask>
             <use
               id='Short-Hair'
               stroke='none'
               fill='#28354B'
-              fillRule='evenodd'
-              xlinkHref='#waved_path1'
+              fill-rule='evenodd'
+              xlink:href='#waved_path1'
             />""" +
           hairColor(hairC, "waved_mask1") +
           accessorySvg(acc) +
@@ -2003,7 +1999,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairsides:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="side_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -2016,7 +2012,7 @@ String topSVG(Top top,
           />
         </defs>
         <mask id="side_mask2" fill='white'>
-          <use xlinkHref='#side_path1' />
+          <use xlink:href='#side_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/Sides' mask='url(#side_mask2)'>
@@ -2024,13 +2020,13 @@ String topSVG(Top top,
             <FacialHair />
             <g
               id='Hair'
-              strokeWidth='1'
-              fillRule='evenodd'
+              stroke-width='1'
+              fill-rule='evenodd'
               transform='translate(70.000000, 74.000000)'>
               <mask id="side_mask1" fill='white'>
-                <use xlinkHref='#side_path3' />
+                <use xlink:href='#side_path3' />
               </mask>
-              <use id='Sides' fill='#9E7A7A' xlinkHref='#side_path3' />""" +
+              <use id='Sides' fill='#9E7A7A' xlink:href='#side_path3' />""" +
           hairColor(hairC, "side_mask1") +
           """</g>""" +
           accessorySvg(acc) +
@@ -2039,7 +2035,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairthecaesar:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="caesar_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -2072,7 +2068,7 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="caesar_mask1" fill='white'>
-          <use xlinkHref='#caesar_path1' />
+          <use xlink:href='#caesar_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/The-Caesar' mask='url(#caesar_mask1)'>
@@ -2080,13 +2076,13 @@ String topSVG(Top top,
             <FacialHair />
             <g
               id='Hair'
-              strokeWidth='1'
-              fillRule='evenodd'
+              stroke-width='1'
+              fill-rule='evenodd'
               transform='translate(75.000000, 34.000000)'>
               <mask id=caesar_mask2" fill='white'>
-                <use xlinkHref='#caesar_path2' />
+                <use xlink:href='#caesar_path2' />
               </mask>
-              <use id='Caesar' fill='#28354B' xlinkHref='#caesar_path2' />""" +
+              <use id='Caesar' fill='#28354B' xlink:href='#caesar_path2' />""" +
           hairColor(hairC, "caesar_mask2") +
           """</g>""" +
           accessorySvg(acc) +
@@ -2095,7 +2091,7 @@ String topSVG(Top top,
       </g>""";
     case Top.shorthairthecaesarsidepart:
       return """
-      <g id='Top' strokeWidth='1' fillRule='evenodd'>
+      <g id='Top' stroke-width='1' fill-rule='evenodd'>
         <defs>
           <rect id="caesar_path1" x='0' y='0' width='264' height='280' />
           <path
@@ -2128,7 +2124,7 @@ String topSVG(Top top,
           </filter>
         </defs>
         <mask id="caesar_mask1" fill='white'>
-          <use xlinkHref='#caesar_path1' />
+          <use xlink:href='#caesar_path1' />
         </mask>
         <g id='Mask' />
         <g id='Top/Short-Hair/The-Caesar-+-Side-Part' mask='url(#caesar_mask1)'>
@@ -2136,13 +2132,13 @@ String topSVG(Top top,
             <FacialHair />
             <g
               id='Hair'
-              strokeWidth='1'
-              fillRule='evenodd'
+              stroke-width='1'
+              fill-rule='evenodd'
               transform='translate(75.000000, 34.000000)'>
               <mask id=caesar_mask2" fill='white'>
-                <use xlinkHref='#caesar_path2' />
+                <use xlink:href='#caesar_path2' />
               </mask>
-              <use id='Caesar' fill='#28354B' xlinkHref='#caesar_path2' />""" +
+              <use id='Caesar' fill='#28354B' xlink:href='#caesar_path2' />""" +
           hairColor(hairC, "caesar_mask2") +
           """</g>""" +
           accessorySvg(acc) +

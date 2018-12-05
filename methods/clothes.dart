@@ -1,7 +1,7 @@
 import '../enums.dart';
 import '../main.dart';
 
-String getClothSvg(Cloth cloth, [ClothColor color, Graphic graphic]) {
+String getClothSvg(Cloth cloth, ClothColor color, Graphic graphic) {
   switch (cloth) {
     case Cloth.blazerShirt:
       return blazerShirt();

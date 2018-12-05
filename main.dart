@@ -83,9 +83,10 @@ String getSvg(Options options) {
                   />
                 </g>
                 """ +
-      getClothSvg(options.clothes) +
+      getClothSvg(options.clothes, options.clothColor, options.graphic) +
       faceSvg(options.mouth, options.eyes, options.eyebrow) +
-      topSVG(Top.nohair) +
+      topSVG(options.top, options.facialHair, options.accessories,
+          options.hatColor, options.facialHairColor, options.hairColor) +
       """
               </g>
             </g>
@@ -137,19 +138,25 @@ class Options {
   Eyebrow eyebrow;
   Mouth mouth;
   Skin skin;
+  HatColor hatColor;
+  FacialHairColor facialHairColor;
+  Graphic graphic;
 
   Options() {
     style = AvatarStyle.circle;
-    top = Top.nohair;
+    top = Top.longhairstraight;
     accessories = Accessories.blank;
     hairColor = HairColor.aurburn;
-    facialHair = FacialHair.beardlight;
+    facialHair = FacialHair.beardmagestic;
     clothes = Cloth.blazerShirt;
-    clothColor = ClothColor.black;
-    eyes = Eyes.close;
+    clothColor = ClothColor.gray1;
+    eyes = Eyes.wink;
     eyebrow = Eyebrow.angry;
-    mouth = Mouth.concerned;
+    mouth = Mouth.serious;
     skin = Skin.black;
+    hatColor = HatColor.white;
+    facialHairColor = FacialHairColor.brownDark;
+    graphic = Graphic.skull;
   }
 }
 
