@@ -124,9 +124,9 @@ class Options {
 
   Options() {
     style = AvatarStyle.circle;
-    top = Top.turban;
+    top = Top.longhairbun;
     accessories = Accessories.kurta;
-    hairColor = HairColor.aurburn;
+    hairColor = HairColor.brownDark;
     facialHair = FacialHair.moustachemagnum;
     clothes = Cloth.blazerShirt;
     clothColor = ClothColor.gray1;
@@ -134,7 +134,7 @@ class Options {
     eyebrow = Eyebrow.angry;
     mouth = Mouth.serious;
     skin = Skin.light;
-    hatColor = HatColor.white;
+    hatColor = HatColor.black;
     facialHairColor = FacialHairColor.black;
     graphic = Graphic.skull;
   }
