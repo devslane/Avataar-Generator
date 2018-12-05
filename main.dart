@@ -1,5 +1,6 @@
 import "enums.dart";
 import 'methods/clothes.dart';
+import 'methods/colors.dart';
 import 'methods/face.dart';
 import 'methods/tops.dart';
 
@@ -71,7 +72,7 @@ String getSvg(Options options) {
                   <mask id="mask-6" fill="white">
                     <use xlink:href="#path-5" />
                   </mask>
-                  <use fill="#D0C6AC" xlink:href="#path-5" />""" +
+                  <use fill="${skinColorHex(options.skin)}" xlink:href="#path-5" />""" +
       skinSvg(options.skin, "mask-6") +
       """
                   <path
@@ -93,27 +94,6 @@ String getSvg(Options options) {
           </g>
         </g>
       </svg>""";
-}
-
-String skinSvg(Skin skin, String maskId) {
-  switch (skin) {
-    case Skin.tanned:
-      return makeColor("#FD9841", maskId);
-    case Skin.yellow:
-      return makeColor("#F8D25C", maskId);
-    case Skin.pale:
-      return makeColor("#FFDBB4", maskId);
-    case Skin.light:
-      return makeColor("#EDB98A", maskId);
-    case Skin.brown:
-      return makeColor("#D08B5B", maskId);
-    case Skin.darkBrown:
-      return makeColor("#AE5D29", maskId);
-    case Skin.black:
-      return makeColor("#614335", maskId);
-    default:
-      return "";
-  }
 }
 
 String faceSvg(Mouth mouth, Eyes eyes, Eyebrow eyeBrow) {
@@ -144,29 +124,18 @@ class Options {
 
   Options() {
     style = AvatarStyle.circle;
-    top = Top.hijab;
+    top = Top.turban;
     accessories = Accessories.kurta;
     hairColor = HairColor.aurburn;
-    facialHair = FacialHair.beardmagestic;
+    facialHair = FacialHair.moustachemagnum;
     clothes = Cloth.blazerShirt;
     clothColor = ClothColor.gray1;
     eyes = Eyes.wink;
     eyebrow = Eyebrow.angry;
     mouth = Mouth.serious;
-    skin = Skin.black;
+    skin = Skin.light;
     hatColor = HatColor.white;
-    facialHairColor = FacialHairColor.brownDark;
+    facialHairColor = FacialHairColor.black;
     graphic = Graphic.skull;
   }
-}
-
-String makeColor(String hex, String maskId) {
-  return """
-  <g
-          id='Color/Palette/Gray-01'
-          mask='url(#${maskId})'
-          fill-rule='evenodd'
-          fill=${hex}>
-          <rect id='🖍Color' x='0' y='0' width='264' height='110' />
-        </g>""";
 }

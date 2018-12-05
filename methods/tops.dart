@@ -1,6 +1,7 @@
 import '../enums.dart';
 import '../main.dart';
 import 'accessories.dart';
+import 'colors.dart';
 
 String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
     FacialHairColor fhc, HairColor hairC) {
@@ -2152,43 +2153,6 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
   }
 }
 
-String hatColor(HatColor color, String maskId) {
-  switch (color) {
-    case HatColor.black:
-      return makeColor("#262E33", maskId);
-    case HatColor.blue01:
-      return makeColor("#65C9FF", maskId);
-    case HatColor.blue02:
-      return makeColor("#5199E4", maskId);
-    case HatColor.blue03:
-      return makeColor("#25557C", maskId);
-    case HatColor.gray01:
-      return makeColor("#E6E6E6", maskId);
-    case HatColor.gray02:
-      return makeColor("#929598", maskId);
-    case HatColor.heather:
-      return makeColor("#3C4F5C", maskId);
-    case HatColor.pastelblue:
-      return makeColor("#B1E2FF", maskId);
-    case HatColor.pastelgreen:
-      return makeColor("#A7FFC4", maskId);
-    case HatColor.pastelorange:
-      return makeColor("#FFDEB5", maskId);
-    case HatColor.pastelred:
-      return makeColor("#FFAFB9", maskId);
-    case HatColor.pastelyellow:
-      return makeColor("#FFFFB1", maskId);
-    case HatColor.pink:
-      return makeColor("#FF488E", maskId);
-    case HatColor.red:
-      return makeColor("#FF5C5C", maskId);
-    case HatColor.white:
-      return makeColor("#FFFFFF", maskId);
-    default:
-      return "";
-  }
-}
-
 String facialHair(FacialHair hair, FacialHairColor color) {
   switch (hair) {
     case FacialHair.blank:
@@ -2260,7 +2224,7 @@ String facialHair(FacialHair hair, FacialHairColor color) {
         </mask>
         <use
           id='Glorious-Beard'
-          fill='#5E7AA9'
+          fill='${facialHairColorHex(color)}'
           fill-rule='evenodd'
           xlink:href='#majestic_path'
         />""" +
@@ -2310,56 +2274,6 @@ String facialHair(FacialHair hair, FacialHairColor color) {
         />""" +
           facialHairColor(color, "magnum_mask") +
           """</g>""";
-    default:
-      return "";
-  }
-}
-
-String facialHairColor(FacialHairColor color, String maskId) {
-  switch (color) {
-    case FacialHairColor.auburn:
-      return makeColor("#A55728", maskId);
-    case FacialHairColor.black:
-      return makeColor("#2C1B18", maskId);
-    case FacialHairColor.blonde:
-      return makeColor("#B58143", maskId);
-    case FacialHairColor.blondeGolden:
-      return makeColor("#D6B370", maskId);
-    case FacialHairColor.brown:
-      return makeColor("#724133", maskId);
-    case FacialHairColor.brownDark:
-      return makeColor("#4A312C", maskId);
-    case FacialHairColor.platinum:
-      return makeColor("#ECDCBF", maskId);
-    case FacialHairColor.red:
-      return makeColor("#C93305", maskId);
-    default:
-      return "";
-  }
-}
-
-String hairColor(HairColor color, String maskId) {
-  switch (color) {
-    case HairColor.aurburn:
-      return makeColor("#A55728", maskId);
-    case HairColor.black:
-      return makeColor("#2C1B18", maskId);
-    case HairColor.blonde:
-      return makeColor("#B58143", maskId);
-    case HairColor.blondeGolden:
-      return makeColor("#D6B370", maskId);
-    case HairColor.brown:
-      return makeColor("#724133", maskId);
-    case HairColor.brownDark:
-      return makeColor("#4A312C", maskId);
-    case HairColor.pastelPink:
-      return makeColor("#F59797", maskId);
-    case HairColor.platinum:
-      return makeColor("#ECDCBF", maskId);
-    case HairColor.red:
-      return makeColor("#C93305", maskId);
-    case HairColor.silverGray:
-      return makeColor("#E8E1E1", maskId);
     default:
       return "";
   }

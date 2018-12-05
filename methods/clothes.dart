@@ -1,5 +1,6 @@
 import '../enums.dart';
 import '../main.dart';
+import 'colors.dart';
 
 String getClothSvg(Cloth cloth, ClothColor color, Graphic graphic) {
   switch (cloth) {
@@ -367,43 +368,6 @@ String shirtVNeck(ClothColor color) {
         />""" +
       clothColor(color, "v_mask") +
       """</g>""";
-}
-
-clothColor(ClothColor color, String maskId) {
-  switch (color) {
-    case ClothColor.black:
-      return makeColor("#262E33", maskId);
-    case ClothColor.blue1:
-      return makeColor("#65C9FF", maskId);
-    case ClothColor.blue2:
-      return makeColor("#5199E4", maskId);
-    case ClothColor.blue3:
-      return makeColor("#25557C", maskId);
-    case ClothColor.gray1:
-      return makeColor("#E6E6E6", maskId);
-    case ClothColor.gray2:
-      return makeColor("#929598", maskId);
-    case ClothColor.heather:
-      return makeColor("#3C4F5C", maskId);
-    case ClothColor.pastelBlue:
-      return makeColor("#B1E2FF", maskId);
-    case ClothColor.pastelGreen:
-      return makeColor("#A7FFC4", maskId);
-    case ClothColor.pastelOrange:
-      return makeColor("#FFDEB5", maskId);
-    case ClothColor.pastelRed:
-      return makeColor("#FFAFB9", maskId);
-    case ClothColor.pastelYellow:
-      return makeColor("#FFFFB1", maskId);
-    case ClothColor.pink:
-      return makeColor("#FF488E", maskId);
-    case ClothColor.red:
-      return makeColor("#FF5C5C", maskId);
-    case ClothColor.white:
-      return makeColor("#FFFFFF", maskId);
-    default:
-      return "";
-  }
 }
 
 String graphic(Graphic graphic, String maskId) {
