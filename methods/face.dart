@@ -18,7 +18,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.close:
       return """
   <g
-        id="Eyes/Closed-😌"
+        id="Eyes/Closed"
         transform="translate(0.000000, 8.000000)"
         fill-opacity="0.599999964">
         <path
@@ -34,7 +34,7 @@ String eyesSvg(Eyes eye) {
       </g>""";
     case Eyes.cry:
       return """
-  <g id='Eyes/Cry-😢' transform='translate(0.000000, 8.000000)'>
+  <g id='Eyes/Cry' transform='translate(0.000000, 8.000000)'>
         <circle
           id='Eye'
           fill-opacity='0.599999964'
@@ -63,7 +63,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.none:
       return """
       <g
-        id='Eyes/Default-😀'
+        id='Eyes/Default'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.599999964'>
         <circle id='Eye' cx='30' cy='22' r='6' />
@@ -72,7 +72,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.dizzy:
       return """
       <g
-        id='Eyes/X-Dizzy-😵'
+        id='Eyes/X-Dizzy'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.599999964'
         fill-rule='nonzero'>
@@ -87,7 +87,7 @@ String eyesSvg(Eyes eye) {
       </g>""";
     case Eyes.eyeRoll:
       return """
-      <g id='Eyes/Eye-Roll-🙄' transform='translate(0.000000, 8.000000)'>
+      <g id='Eyes/Eye-Roll' transform='translate(0.000000, 8.000000)'>
         <circle id='Eyeball' fill='#FFFFFF' cx='30' cy='22' r='14' />
         <circle id='The-white-stuff' fill='#FFFFFF' cx='82' cy='22' r='14' />
         <circle
@@ -110,7 +110,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.happy:
       return """
       <g
-        id='Eyes/Happy-😁'
+        id='Eyes/Happy'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.599999964'>
         <path
@@ -125,7 +125,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.hearts:
       return """
       <g
-        id='Eyes/Hearts-😍'
+        id='Eyes/Hearts'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.8'
         fill-rule='nonzero'
@@ -142,7 +142,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.side:
       return """
       <g
-        id='Eyes/Side-😒'
+        id='Eyes/Side'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.599999964'>
         <path
@@ -156,7 +156,7 @@ String eyesSvg(Eyes eye) {
       </g>""";
     case Eyes.squint:
       return """
-      <g id='Eyes/Squint-😊' transform='translate(0.000000, 8.000000)'>
+      <g id='Eyes/Squint' transform='translate(0.000000, 8.000000)'>
         <defs>
           <path
             d='M14,14.0481187 C23.6099827,14.0481187 28,18.4994466 28,11.5617716 C28,4.62409673 21.7319865,0 14,0 C6.2680135,0 0,4.62409673 0,11.5617716 C0,18.4994466 4.39001726,14.0481187 14,14.0481187 Z'
@@ -198,7 +198,7 @@ String eyesSvg(Eyes eye) {
       </g>""";
     case Eyes.surprised:
       return """
-      <g id='Eyes/Surprised-😳' transform='translate(0.000000, 8.000000)'>
+      <g id='Eyes/Surprised' transform='translate(0.000000, 8.000000)'>
         <circle id='The-White-Stuff' fill='#FFFFFF' cx='30' cy='22' r='14' />
         <circle id='Eye-Ball' fill='#FFFFFF' cx='82' cy='22' r='14' />
         <circle
@@ -221,7 +221,7 @@ String eyesSvg(Eyes eye) {
     case Eyes.wink:
       return """
       <g
-        id='Eyes/Wink-😉'
+        id='Eyes/Wink'
         transform='translate(0.000000, 8.000000)'
         fill-opacity='0.599999964'>
         <circle id='Eye' cx='30' cy='22' r='6' />
@@ -233,7 +233,7 @@ String eyesSvg(Eyes eye) {
       </g>""";
     case Eyes.winkWacky:
       return """
-      <g id='Eyes/Wink-Wacky-😜' transform='translate(0.000000, 8.000000)'>
+      <g id='Eyes/Wink-Wacky' transform='translate(0.000000, 8.000000)'>
         <circle
           id='Cornea?-I-don&#39;t-know'
           fill='#FFFFFF'

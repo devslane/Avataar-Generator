@@ -7,7 +7,7 @@ String makeColor(String hex, String maskId) {
           mask='url(#${maskId})'
           fill-rule='evenodd'
           fill=${hex}>
-          <rect id='🖍Color' x='0' y='0' width='264' height='110' />
+          <rect id='pen-Color' x='0' y='0' width='264' height='110' />
         </g>""";
 }
 

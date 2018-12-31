@@ -44,7 +44,7 @@ String blazerShirt() {
           </mask>
           <use id="Clothes" fill="#E6E6E6" xlink:href="#cloth_path" />
           <g id="Color/Palette/Black" mask="url(#cloth_mask)" fill="#262E33">
-            <g transform="translate(-32.000000, -29.000000)" id="🖍Color">
+            <g transform="translate(-32.000000, -29.000000)" id="Color">
               <rect x="0" y="0" width="264" height="110" />
             </g>
           </g>
@@ -54,7 +54,7 @@ String blazerShirt() {
             mask="url(#cloth_mask)"
             fill-opacity="0.16"
             fill="#000000">
-            <g transform="translate(60.000000, -25.000000)" id="Hola-👋🏼">
+            <g transform="translate(60.000000, -25.000000)" id="Hola">
               <ellipse
                 cx="40.5"
                 cy="27.8476251"
@@ -115,7 +115,7 @@ String blazerSweater() {
           mask='url(#blazer_mask)'
           fill-rule='evenodd'
           fill='#262E33'>
-          <rect id='🖍Color' x='0' y='0' width='264' height='110' />
+          <rect id='pen-Color' x='0' y='0' width='264' height='110' />
         </g>
         <g
           id='Blazer'
@@ -312,7 +312,7 @@ String shirtCrewNeck(ClothColor color) {
           mask='url(#crew_path)'
           fill-opacity='0.16'
           fill='#000000'>
-          <g transform='translate(92.000000, 4.000000)' id='Hola-👋🏼'>
+          <g transform='translate(92.000000, 4.000000)' id='Hola'>
             <ellipse
               cx='40.5'
               cy='27.8476251'
