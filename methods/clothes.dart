@@ -44,7 +44,7 @@ String blazerShirt() {
           </mask>
           <use id="Clothes" fill="#E6E6E6" xlink:href="#cloth_path" />
           <g id="Color/Palette/Black" mask="url(#cloth_mask)" fill="#262E33">
-            <g transform="translate(-32.000000, -29.000000)" id="Color">
+            <g transform="translate(-32.000000, -29.000000)" id="pen-Color">
               <rect x="0" y="0" width="264" height="110" />
             </g>
           </g>

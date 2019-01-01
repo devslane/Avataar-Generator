@@ -56,7 +56,7 @@ String getSvg(Options options) {
                     id="Color/Palette/Blue-01"
                     mask="url(#mask-2)"
                     fill="#65C9FF">
-                    <rect id="🖍Color" x="0" y="0" width="240" height="240" />
+                    <rect id="pen-Color" x="0" y="0" width="240" height="240" />
                   </g>
                 </g>
                 <mask id="mask-4" fill="white">
