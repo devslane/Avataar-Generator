@@ -236,9 +236,9 @@ String round() {
             fill='black'
             fill-opacity='1'
             filter='url(#round_id)'
-            xlink:href='#round_path'
+            href='#round_path'
           />
-          <use fill='#252C2F' fill-rule='evenodd' xlink:href='#round_path' />
+          <use fill='#252C2F' fill-rule='evenodd' href='#round_path' />
         </g>
       </g>""";
 }
@@ -310,24 +310,24 @@ String sunglasses() {
             <use
               fill-opacity='0.700000048'
               fill='#000000'
-              xlink:href='#sunglasses_path1'
+              href='#sunglasses_path1'
             />
             <use
               fill='url(#linearGradient1)'
               style="'mix-blend-mode': 'screen'"
-              xlink:href='#sunglasses_path1'
+              href='#sunglasses_path1'
             />
           </g>
           <g id='shades'>
             <use
               fill-opacity='0.700000048'
               fill='#000000'
-              xlink:href='#sunglasses_path1'
+              href='#sunglasses_path1'
             />
             <use
               fill="url(#linearGradient2)"
               style="'mix-blend-mode': 'screen'"
-              xlink:href='#sunglasses_path2'
+              href='#sunglasses_path2'
             />
           </g>
           <g id='Glasses' fill='#252C2F'>
@@ -419,13 +419,13 @@ String wayfarers() {
                 fill-opacity='0.700000048'
                 fill='#000000'
                 fill-rule='evenodd'
-                xlink:href='#way_path1'
+                href='#way_path1'
               />
               <use
                 fill='url(#linearGradient1)'
                 fill-rule='evenodd'
                 style="'mix-blend-mode: 'screen"
-                xlink:href='#way_path1'
+                href='#way_path1'
               />
             </g>
             <g id='Shade'>
@@ -433,13 +433,13 @@ String wayfarers() {
                 fill-opacity='0.700000048'
                 fill='#000000'
                 fill-rule='evenodd'
-                xlink:href='#way_path2'
+                href='#way_path2'
               />
               <use
                 fill='url(#linearGradient1)'
                 fill-rule='evenodd'
                 style="'mix-blend-mode: 'screen"
-                xlink:href='#way_path2'
+                href='#way_path2'
               />
             </g>
           </g>

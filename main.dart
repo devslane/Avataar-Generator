@@ -45,12 +45,12 @@ String getSvg(Options options) {
                   fill-rule="evenodd"
                   transform="translate(12.000000, 40.000000)">
                   <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1" />
+                    <use href="#path-1" />
                   </mask>
                   <use
                     id="Circle-Background"
                     fill="#E6E6E6"
-                    xlink:href="#path-1"
+                    href="#path-1"
                   />
                   <g
                     id="Color/Palette/Blue-01"
@@ -60,7 +60,7 @@ String getSvg(Options options) {
                   </g>
                 </g>
                 <mask id="mask-4" fill="white">
-                  <use xlink:href="#path-3" />
+                  <use href="#path-3" />
                 </mask>
               <g id="Mask" />
               <g
@@ -70,9 +70,9 @@ String getSvg(Options options) {
                 mask="url(#mask-4)">
                 <g id="Body" transform="translate(32.000000, 36.000000)">
                   <mask id="mask-6" fill="white">
-                    <use xlink:href="#path-5" />
+                    <use href="#path-5" />
                   </mask>
-                  <use fill="${skinColorHex(options.skin)}" xlink:href="#path-5" />""" +
+                  <use fill="${skinColorHex(options.skin)}" href="#path-5" />""" +
       skinSvg(options.skin, "mask-6") +
       """
                   <path

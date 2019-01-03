@@ -169,9 +169,9 @@ String eyesSvg(Eyes eye) {
         </defs>
         <g id='Eye' transform='translate(16.000000, 13.000000)'>
           <mask id="squint_mask" fill='white'>
-            <use xlink:href='#squint_path1' />
+            <use href='#squint_path1' />
           </mask>
-          <use id='The-white-stuff' fill='#FFFFFF' xlink:href='#squint_path1' />
+          <use id='The-white-stuff' fill='#FFFFFF' href='#squint_path1' />
           <circle
             fill-opacity='0.699999988'
             fill='#000000'
@@ -183,9 +183,9 @@ String eyesSvg(Eyes eye) {
         </g>
         <g id='Eye' transform='translate(68.000000, 13.000000)'>
           <mask id="squint_mask2" fill='white'>
-            <use xlink:href='#squint_path2' />
+            <use href='#squint_path2' />
           </mask>
-          <use id='Eyeball-Mask' fill='#FFFFFF' xlink:href='#squint_path2' />
+          <use id='Eyeball-Mask' fill='#FFFFFF' href='#squint_path2' />
           <circle
             fill-opacity='0.699999988'
             fill='#000000'
@@ -460,7 +460,7 @@ String mouthSvg(Mouth mouth) {
         </defs>
         <mask id="mouth_mask" fill="white">
           <use
-            xlink:href="#mouth_path"
+            href="#mouth_path"
             transform="translate(54.003637, 22.500000) scale(1, -1) translate(-54.003637, -22.500000) "
           />
         </mask>
@@ -470,7 +470,7 @@ String mouthSvg(Mouth mouth) {
           fill="#000000"
           fill-rule="evenodd"
           transform="translate(54.003637, 22.500000) scale(1, -1) translate(-54.003637, -22.500000) "
-          xlink:href="#mouth_path"
+          href="#mouth_path"
         />
         <rect
           id="Teeth"
@@ -569,13 +569,13 @@ String mouthSvg(Mouth mouth) {
           rx='13'
         />
         <mask id="grimace_mask" fill='white'>
-          <use xlink:href='#grimace_path' />
+          <use href='#grimace_path' />
         </mask>
         <use
           id='Mouth'
           fill='#FFFFFF'
           fill-rule='evenodd'
-          xlink:href='#grimace_path'
+          href='#grimace_path'
         />
         <path
           d='M71,22 L62,22 L62,34 L58,34 L58,22 L49,22 L49,34 L45,34 L45,22 L36,22 L36,34 L32,34 L32,22 L24,22 L24,18 L32,18 L32,6 L36,6 L36,18 L45,18 L45,6 L49,6 L49,18 L58,18 L58,6 L62,6 L62,18 L71,18 L71,6 L75,6 L75,18 L83.8666667,18 L83.8666667,22 L75,22 L75,34 L71,34 L71,22 Z'
@@ -609,7 +609,7 @@ String mouthSvg(Mouth mouth) {
         </defs>
         <mask id="scream_mask" fill='white'>
           <use
-            xlink:href='#scream_path'
+            href='#scream_path'
             transform='translate(54.000000, 26.999998) scale(1, -1) translate(-54.000000, -26.999998) '
           />
         </mask>
@@ -619,7 +619,7 @@ String mouthSvg(Mouth mouth) {
           fill='#000000'
           fill-rule='evenodd'
           transform='translate(54.000000, 26.999998) scale(1, -1) translate(-54.000000, -26.999998) '
-          xlink:href='#scream_path'
+          href='#scream_path'
         />
         <rect
           id='Teeth'
@@ -663,14 +663,14 @@ String mouthSvg(Mouth mouth) {
           />
         </defs>
         <mask id="smile_mask" fill='white'>
-          <use xlink:href='#smile_path' />
+          <use href='#smile_path' />
         </mask>
         <use
           id='Mouth'
           fill-opacity='0.699999988'
           fill='#000000'
           fill-rule='evenodd'
-          xlink:href='#smile_path'
+          href='#smile_path'
         />
         <rect
           id='Teeth'
@@ -705,14 +705,14 @@ String mouthSvg(Mouth mouth) {
           />
         </defs>
         <mask id="tongue_mask" fill='white'>
-          <use xlink:href='#tongue_path' />
+          <use href='#tongue_path' />
         </mask>
         <use
           id='Mouth'
           fill-opacity='0.699999988'
           fill='#000000'
           fill-rule='evenodd'
-          xlink:href='#tongue_path'
+          href='#tongue_path'
         />
         <rect
           id='Teeth'
@@ -787,7 +787,7 @@ String mouthSvg(Mouth mouth) {
         </defs>
         <mask id="vomit_mask" fill='white'>
           <use
-            xlink:href='#vomit_path1'
+            href='#vomit_path1'
             transform='translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) '
           />
         </mask>
@@ -797,7 +797,7 @@ String mouthSvg(Mouth mouth) {
           fill='#000000'
           fill-rule='evenodd'
           transform='translate(54.000000, 21.499998) scale(1, -1) translate(-54.000000, -21.499998) '
-          xlink:href='#vomit_path1'
+          href='#vomit_path1'
         />
         <rect
           id='Teeth'
@@ -811,12 +811,12 @@ String mouthSvg(Mouth mouth) {
           rx='5'
         />
         <g id='Vomit-Stuff'>
-          <use fill='#88C553' fill-rule='evenodd' xlink:href='#vomit_path2' />
+          <use fill='#88C553' fill-rule='evenodd' href='#vomit_path2' />
           <use
             fill='black'
             fill-opacity='1'
             filter='url(#vomit_filter)'
-            xlink:href='#vomit_path2'
+            href='#vomit_path2'
           />
         </g>
       </g>""";
