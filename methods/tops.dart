@@ -2079,7 +2079,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               stroke-width='1'
               fill-rule='evenodd'
               transform='translate(75.000000, 34.000000)'>
-              <mask id=caesar_mask2" fill='white'>
+              <mask id="caesar_mask2" fill='white'>
                 <use href='#caesar_path2' />
               </mask>
               <use id='Caesar' fill='${hairColorHex(hairC)}' href='#caesar_path2' />""" +
@@ -2135,7 +2135,7 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               stroke-width='1'
               fill-rule='evenodd'
               transform='translate(75.000000, 34.000000)'>
-              <mask id=caesar_mask2" fill='white'>
+              <mask id="caesar_mask2" fill='white'>
                 <use href='#caesar_path2' />
               </mask>
               <use id='Caesar' fill='#000000' href='#caesar_path2' />""" +
