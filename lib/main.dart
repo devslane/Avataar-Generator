@@ -1,8 +1,8 @@
-import "enums.dart";
-import 'methods/clothes.dart';
-import 'methods/colors.dart';
-import 'methods/face.dart';
-import 'methods/tops.dart';
+import 'package:avataar_generator/enums.dart';
+import 'package:avataar_generator/methods/clothes.dart';
+import 'package:avataar_generator/methods/colors.dart';
+import 'package:avataar_generator/methods/face.dart';
+import 'package:avataar_generator/methods/tops.dart';
 
 void main() {
   print(getSvg(new Options()));
