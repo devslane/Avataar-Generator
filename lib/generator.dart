@@ -4,10 +4,6 @@ import 'package:avataar_generator/methods/colors.dart';
 import 'package:avataar_generator/methods/face.dart';
 import 'package:avataar_generator/methods/tops.dart';
 
-void main() {
-  print(getSvg(new Options()));
-}
-
 String getSvg(Options options) {
   return """
   <svg
