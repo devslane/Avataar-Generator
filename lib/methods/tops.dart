@@ -369,8 +369,8 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               href='#hat_path2'
             />
             <use fill="#F4F4F4" fill-rule="evenodd" href='#hat_path2' />
-          </g>""" + 
-          facialHair(fh, fhc) + 
+          </g>""" +
+          facialHair(fh, fhc) +
           accessorySvg(acc) +
           """</g>
       </g>""";
@@ -874,7 +874,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               fill-rule='evenodd'
               transform='translate(63.000000, 87.000000)'
             />
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
@@ -1618,7 +1620,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/Dreads-01' mask='url(#short_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
@@ -1658,7 +1662,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/Dreads-02' mask='url(#short_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
@@ -1768,7 +1774,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
               fill='#000000'
               fill-rule='evenodd'
             />
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
           </g>
         </g>
       </g>""";
@@ -1869,7 +1877,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Flat' mask='url(#flat_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <mask id="flat_mask1" fill='white'>
               <use href='#flat_path1' />
             </mask>
@@ -1925,7 +1935,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/Short-Round' mask='url(#round_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <mask id="round_mask1" fill='white'>
               <use href='#round_path1' />
             </mask>
@@ -2017,7 +2029,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/Sides' mask='url(#side_mask2)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
@@ -2073,7 +2087,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/The-Caesar' mask='url(#caesar_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
@@ -2129,7 +2145,9 @@ String topSVG(Top top, FacialHair fh, Accessories acc, HatColor hColor,
         <g id='Mask' />
         <g id='Top/Short-Hair/The-Caesar-+-Side-Part' mask='url(#caesar_mask1)'>
           <g transform='translate(-1.000000, 0.000000)'>
-            """ +           facialHair(fh, fhc) +"""
+            """ +
+          facialHair(fh, fhc) +
+          """
             <g
               id='Hair'
               stroke-width='1'
