@@ -30,7 +30,7 @@ String getSvg(Options options) {
           />
         </defs>
         <g
-          id="Avataaar"
+          id="Avataar"
           stroke="none"
           stroke-width="1"
           fill="none"
