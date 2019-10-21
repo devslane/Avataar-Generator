@@ -1,4 +1,4 @@
-enum AvatarStyle {
+enum AvatarLStyle {
   circle,
   transparent,
 }
