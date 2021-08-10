@@ -3,6 +3,7 @@ import 'package:avataar_generator/methods/clothes.dart';
 import 'package:avataar_generator/methods/colors.dart';
 import 'package:avataar_generator/methods/face.dart';
 import 'package:avataar_generator/methods/tops.dart';
+import 'dart:convert';
 
 String getSvg(Options options) {
   return """
@@ -134,4 +135,52 @@ class Options {
     facialHairColor = FacialHairColor.black;
     graphic = Graphic.skull;
   }
+
+  factory Options.fromJson(String str)=> Options.fromMap(json.decode(str));
+  toJson()=> json.encode(this.toMap());
+
+  factory Options.fromMap(Map<String, dynamic> json) {
+    Options opt = Options();
+    opt.style =
+        enumFromString(AvatarStyle.values, json["style"], AvatarStyle.circle);
+    opt.top = enumFromString(Top.values, json["top"], Top.shorthairfrizzle);
+    opt.accessories = enumFromString(
+        Accessories.values, json["accessories"], Accessories.blank);
+    opt.hairColor = enumFromString(
+        HairColor.values, json["hairColor"], HairColor.brownDark);
+    opt.facialHair =
+        enumFromString(FacialHair.values, json["facialHair"], FacialHair.blank);
+    opt.clothes =
+        enumFromString(Cloth.values, json["clothes"], Cloth.blazerShirt);
+    opt.clothColor =
+        enumFromString(ClothColor.values, json["clothColor"], ClothColor.gray1);
+    opt.eyes = enumFromString(Eyes.values, json["eyes"], Eyes.wink);
+    opt.eyebrow =
+        enumFromString(Eyebrow.values, json["eyebrow"], Eyebrow.raisedExcited);
+    opt.mouth = enumFromString(Mouth.values, json["mouth"], Mouth.smile);
+    opt.skin = enumFromString(Skin.values, json["skin"], Skin.black);
+    opt.hatColor =
+        enumFromString(HatColor.values, json["hatColor"], HatColor.black);
+    opt.facialHairColor = enumFromString(
+        FacialHairColor.values, json["facialHairColor"], FacialHairColor.black);
+    opt.graphic = enumFromString(Graphic.values, json["style"], Graphic.skull);
+    return opt;
+  }
+
+  Map<String, dynamic> toMap() => {
+    "style": style.toString(),
+    "top": top.toString(),
+    "accessories": accessories.toString(),
+    "hairColor": hairColor.toString(),
+    "facialHair": facialHair.toString(),
+    "clothes": clothes.toString(),
+    "clothColor": clothColor.toString(),
+    "eyes": eyes.toString(),
+    "eyebrow": eyebrow.toString(),
+    "mouth": mouth.toString(),
+    "skin": skin.toString(),
+    "hatColor": hatColor.toString(),
+    "facialHairColor": facialHairColor.toString(),
+    "graphic": graphic.toString(),
+  };
 }
