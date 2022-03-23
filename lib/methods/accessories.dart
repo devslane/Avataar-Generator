@@ -1,4 +1,4 @@
-import 'package:avataar_generator/enums.dart';
+import '../enums.dart';
 
 String accessorySvg(Accessories acc) {
   switch (acc) {

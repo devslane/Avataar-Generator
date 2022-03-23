@@ -1,8 +1,8 @@
-import 'package:avataar_generator/enums.dart';
-import 'package:avataar_generator/methods/clothes.dart';
-import 'package:avataar_generator/methods/colors.dart';
-import 'package:avataar_generator/methods/face.dart';
-import 'package:avataar_generator/methods/tops.dart';
+import 'enums.dart';
+import 'methods/clothes.dart';
+import 'methods/colors.dart';
+import 'methods/face.dart';
+import 'methods/tops.dart';
 import 'dart:convert';
 
 String getSvg(Options options) {
@@ -119,22 +119,22 @@ class Options {
   FacialHairColor facialHairColor;
   Graphic graphic;
 
-  Options() {
-    style = AvatarStyle.circle;
-    top = Top.shorthairfrizzle;
-    accessories = Accessories.kurta;
-    hairColor = HairColor.brownDark;
-    facialHair = FacialHair.moustachemagnum;
-    clothes = Cloth.blazerShirt;
-    clothColor = ClothColor.gray1;
-    eyes = Eyes.wink;
-    eyebrow = Eyebrow.angry;
-    mouth = Mouth.serious;
-    skin = Skin.light;
-    hatColor = HatColor.black;
-    facialHairColor = FacialHairColor.black;
-    graphic = Graphic.skull;
-  }
+  Options({
+    this.style = AvatarStyle.circle,
+    this.top = Top.shorthairfrizzle,
+    this.accessories = Accessories.kurta,
+    this.hairColor = HairColor.brownDark,
+    this.facialHair = FacialHair.moustachemagnum,
+    this.clothes = Cloth.blazerShirt,
+    this.clothColor = ClothColor.gray1,
+    this.eyes = Eyes.wink,
+    this.eyebrow = Eyebrow.angry,
+    this.mouth = Mouth.serious,
+    this.skin = Skin.light,
+    this.hatColor = HatColor.black,
+    this.facialHairColor = FacialHairColor.black,
+    this.graphic = Graphic.skull,
+  });
 
   factory Options.fromJson(String str)=> Options.fromMap(json.decode(str));
   toJson()=> json.encode(this.toMap());
